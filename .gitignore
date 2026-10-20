@@ -1,0 +1,35 @@
+__pycache__
+*.pyc
+_OldCodeBackups
+_Backups
+_Oldies
+*.history
+.VSCodeCounter
+tmp/
+
+# Virtual envs
+.venv
+
+# VS Code
+.vscode
+.vscode/settings.json
+.vscode/WkStoryLiner.code-workspace
+
+.local
+.history
+
+# Docs
+docs/_build
+docs/_html
+docs_dev/_build
+docs_dev/_html
+
+# Assets
+*.blend1
+
+# Presets
+storyliner/autoprefs/*.json
+
+# packages
+_PackagesForInstall
+

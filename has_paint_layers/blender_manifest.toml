@@ -1,0 +1,21 @@
+schema_version = "1.0.0"
+
+id = "has_paint_layers"
+version = "0.8.93"
+name = "HAS Paint Layers"
+tagline = "Layers for texture painting"
+maintainer = "Hirourk <not.nice.primer@gmail.com>"
+type = "add-on"
+
+website = "https://hirourk.github.io/HASPaintLayersWiki/index"
+
+tags = ["Paint", "Bake"]
+
+blender_version_min = "4.2.0"
+
+license = [
+  "SPDX:GPL-3.0-or-later",
+]
+
+[permissions]
+files = "Store temporary images"
