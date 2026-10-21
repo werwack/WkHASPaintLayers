@@ -32,9 +32,23 @@ bl_info = {
 
 import bpy
 from bpy.app.handlers import persistent, save_pre
-from . import operators, ui, properties, has_enum, utils, bake, presets, tools
+from . import main_ui, operators, has_enum, bake, presets, tools
+from .properties import class_LayerReference, class_LayerProperties, class_FilterProperties, properties
+from .utils import utils
 
-modules = [operators, ui, properties, has_enum, utils, bake, presets, tools]
+modules = [
+    operators,
+    main_ui,
+    # class_LayerReference,
+    # class_LayerProperties,
+    # class_FilterProperties,
+    properties,
+    has_enum,
+    utils,
+    bake,
+    presets,
+    tools,
+]
 
 
 @bpy.app.handlers.persistent
@@ -56,6 +70,8 @@ def register():
 
     bpy.types.Scene.selected_texture = bpy.props.StringProperty(name="Selected Texture")
 
+    print("WkHASPaintLayers registered")
+
 
 def unregister():
 
@@ -69,6 +85,8 @@ def unregister():
         del bpy.types.Scene.selected_texture
     except Exception:
         pass
+
+    print("WkHASPaintLayers unregistered")
 
 
 if __name__ == "__main__":
